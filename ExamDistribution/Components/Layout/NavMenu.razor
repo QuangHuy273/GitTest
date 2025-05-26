@@ -1,0 +1,58 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">ExamDistribution</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="staffs">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Quản Lý Nhân Viên
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="add-staff">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Thêm Nhân Viên
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+<NavLink class="nav-link" href="/staffs">
+    <span class="oi oi-people" aria-hidden="true"></span> Nhân viên
+</NavLink>
+
+
+<li class="nav-item px-3">
+    <NavLink class="nav-link" href="/add-staff">
+        ➕ Thêm nhân viên
+    </NavLink>
+</li>
+
+<NavLink href="/staff-major-facility" class="nav-link">
+    Quản lý Bộ môn Chuyên ngành
+</NavLink>
+
+
+
+

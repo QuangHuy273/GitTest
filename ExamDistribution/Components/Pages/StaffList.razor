@@ -1,0 +1,152 @@
+﻿@page "/staffs"
+@using ExamDistribution.Data
+@using ExamDistribution.Models
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext Db
+@rendermode InteractiveServer
+
+<h3 class="text-xl font-bold mb-4">Danh sách nhân viên</h3>
+
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Mã NV</th>
+            <th>Tên</th>
+            <th>Email FE</th>
+            <th>Email FPT</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (staffs.Count == 0)
+        {
+            <tr>
+                <td colspan="6">Không có nhân viên nào.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var staff in staffs)
+            {
+                <tr>
+                    <td>@staff.StaffCode</td>
+                    <td>@staff.Name</td>
+                    <td>@staff.AccountFe</td>
+                    <td>@staff.AccountFpt</td>
+                    <td>
+                        <span class="badge @(staff.Status == 1 ? "bg-success" : "bg-secondary")">
+                            @(staff.Status == 1 ? "Đang hoạt động" : "Nghỉ việc")
+                        </span>
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-warning me-1" href="/edit-staff/@staff.Id">Sửa</a>
+                        <button class="btn btn-sm @(staff.Status == 1 ? "btn-danger" : "btn-success")"
+                                @onclick="() => ToggleStatus(staff)">
+                            @(staff.Status == 1 ? "Vô hiệu hóa" : "Kích hoạt")
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger ms-2"
+                                @onclick="() => ConfirmDelete(staff.Id, staff.Name)">
+                            Xóa
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success mt-3">@successMessage</div>
+}
+
+@if (showDeleteConfirmModal)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger">Xác nhận xóa</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDeleteModal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn xóa nhân viên <strong>@staffNameToDelete</strong> không?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CloseDeleteModal">Hủy</button>
+                    <button class="btn btn-danger" @onclick="DeleteConfirmed">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Staff> staffs = new();
+    private string successMessage = "";
+
+    private string staffIdToDelete;
+    private string staffNameToDelete;
+    private bool showDeleteConfirmModal = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadStaffs();
+    }
+
+    private async Task LoadStaffs()
+    {
+        staffs = await Db.Staffs.OrderBy(s => s.Name).ToListAsync();
+    }
+
+    private async Task ToggleStatus(Staff staff)
+    {
+        var found = await Db.Staffs.FirstOrDefaultAsync(s => s.Id == staff.Id);
+        if (found != null)
+        {
+            found.Status = found.Status == 1 ? (byte)0 : (byte)1;
+            found.LastModifiedDate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            Db.Update(found);
+
+            await Db.SaveChangesAsync();
+            await LoadStaffs();
+            StateHasChanged();
+
+            successMessage = $"Đã {(found.Status == 1 ? "kích hoạt" : "vô hiệu hóa")} nhân viên {found.StaffCode}.";
+        }
+    }
+
+    private void ConfirmDelete(string id, string name)
+    {
+        staffIdToDelete = id;
+        staffNameToDelete = name;
+        showDeleteConfirmModal = true;
+    }
+
+    private void CloseDeleteModal()
+    {
+        showDeleteConfirmModal = false;
+        staffIdToDelete = null;
+        staffNameToDelete = null;
+    }
+
+    private async Task DeleteConfirmed()
+    {
+        if (!string.IsNullOrEmpty(staffIdToDelete))
+        {
+            var staff = await Db.Staffs.FindAsync(staffIdToDelete);
+            if (staff != null)
+            {
+                Db.Staffs.Remove(staff);
+                await Db.SaveChangesAsync();
+
+                successMessage = $"Đã xóa nhân viên {staff.StaffCode}.";
+            }
+        }
+
+        showDeleteConfirmModal = false;
+        await LoadStaffs();
+        StateHasChanged();
+    }
+}

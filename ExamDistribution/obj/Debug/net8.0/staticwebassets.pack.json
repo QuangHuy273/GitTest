@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ExamDistribution.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ExamDistribution.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ExamDistribution.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ExamDistribution.props",
+      "PackagePath": "build\\ExamDistribution.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ExamDistribution.props",
+      "PackagePath": "buildMultiTargeting\\ExamDistribution.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ExamDistribution.props",
+      "PackagePath": "buildTransitive\\ExamDistribution.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

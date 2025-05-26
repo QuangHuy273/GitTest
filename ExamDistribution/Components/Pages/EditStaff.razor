@@ -1,0 +1,100 @@
+﻿@page "/edit-staff/{Id}"
+@using ExamDistribution.Data
+@using ExamDistribution.Models
+@inject AppDbContext Db
+@inject NavigationManager Navigation
+@using Microsoft.EntityFrameworkCore
+
+<h3 class="text-xl font-bold mb-4">Chỉnh sửa thông tin nhân viên</h3>
+
+<EditForm Model="@staff" OnValidSubmit="HandleValidSubmit" FormName="editStaffForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Mã nhân viên</label>
+        <InputText class="form-control" @bind-Value="staff.StaffCode" />
+        <ValidationMessage For="@(() => staff.StaffCode)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tên nhân viên</label>
+        <InputText class="form-control" @bind-Value="staff.Name" />
+        <ValidationMessage For="@(() => staff.Name)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email FE</label>
+        <InputText class="form-control" @bind-Value="staff.AccountFe" />
+        <ValidationMessage For="@(() => staff.AccountFe)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email FPT</label>
+        <InputText class="form-control" @bind-Value="staff.AccountFpt" />
+        <ValidationMessage For="@(() => staff.AccountFpt)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Cập nhật</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger mt-3">@errorMessage</div>
+}
+
+@code {
+    [Parameter] public string Id { get; set; }
+
+    private Staff staff = new();
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var found = await Db.Staffs.FirstOrDefaultAsync(s => s.Id == Id);
+        if (found != null)
+        {
+            staff = found;
+        }
+        else
+        {
+            Navigation.NavigateTo("/staffs");
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        errorMessage = "";
+
+        // Validate format
+        if (!staff.AccountFe.EndsWith("@fe.edu.vn") || !staff.AccountFpt.EndsWith("@fpt.edu.vn"))
+        {
+            errorMessage = "Email FE/FPT phải đúng định dạng.";
+            return;
+        }
+
+        if (staff.AccountFe.Contains(" ") || staff.AccountFpt.Contains(" "))
+        {
+            errorMessage = "Email không được chứa khoảng trắng.";
+            return;
+        }
+
+        // Kiểm tra trùng mã hoặc email (ngoại trừ chính nhân viên đang sửa)
+        var isDuplicate = await Db.Staffs.AnyAsync(s =>
+            s.Id != staff.Id &&
+            (s.StaffCode == staff.StaffCode || s.AccountFe == staff.AccountFe || s.AccountFpt == staff.AccountFpt)
+        );
+
+        if (isDuplicate)
+        {
+            errorMessage = "Mã hoặc email đã tồn tại.";
+            return;
+        }
+
+        staff.LastModifiedDate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        Db.Staffs.Update(staff);
+        await Db.SaveChangesAsync();
+
+        Navigation.NavigateTo("/staffs");
+    }
+}

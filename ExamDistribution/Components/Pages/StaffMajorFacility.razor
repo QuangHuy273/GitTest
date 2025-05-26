@@ -1,0 +1,151 @@
+﻿@page "/staff-major-facility"
+@* @page "/staff-major-facility/{staffId}" *@
+@using ExamDistribution.Models
+@using ExamDistribution.Services.Interfaces
+@using ExamDistribution.ViewModels
+@inject IStaffService StaffService
+@inject IFacilityService FacilityService
+@inject IDepartmentService DepartmentService
+@inject IMajorService MajorService
+@inject IStaffMajorFacilityService StaffMajorFacilityService
+
+<h3 class="text-xl font-semibold mb-4">Quản lý bộ môn chuyên ngành của nhân viên</h3>
+
+@if (viewModel == null)
+{
+    <p>Đang tải dữ liệu...</p>
+}
+else
+{
+    <div class="mb-6 p-4 border rounded shadow">
+        <h4 class="font-semibold mb-2">Thông tin nhân viên</h4>
+        <select class="form-select w-full mb-3" @onchange="OnStaffChanged">
+            <option disabled selected value="">-- Chọn nhân viên --</option>
+            @foreach (var staff in staffs)
+            {
+                <option value="@staff.Id">@staff.StaffCode - @staff.Name</option>
+
+            }
+        </select>
+
+        @if (!string.IsNullOrEmpty(viewModel.StaffId))
+        {
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <select class="form-select" value="@viewModel.SelectedFacilityId" @onchange="OnFacilityChanged">
+                    <option disabled selected value="">-- Chọn cơ sở --</option>
+                    @foreach (var facility in viewModel.Facilities)
+                    {
+                        <option value="@facility.Id">@facility.Name</option>
+                    }
+                </select>
+
+
+                <select class="form-select" value="@viewModel.SelectedDepartmentFacilityId" @onchange="OnDepartmentChanged">
+                    <option disabled selected value="">-- Chọn bộ môn --</option>
+                    @foreach (var dept in viewModel.DepartmentFacilities)
+                    {
+                        <option value="@dept.Id">@dept.DepartmentName</option>
+                    }
+                </select>
+
+
+                <select class="form-select" @bind="viewModel.SelectedMajorFacilityId">
+                    <option disabled selected value="">-- Chọn chuyên ngành --</option>
+                    @foreach (var major in viewModel.MajorFacilities)
+                    {
+                        <option value="@major.Id">@major.MajorName</option>
+                    }
+                </select>
+            </div>
+
+            <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded" @onclick="AddStaffMajorFacility">Thêm</button>
+        }
+    </div>
+
+    <div>
+        <h4 class="font-semibold mb-2">Danh sách bộ môn chuyên ngành của nhân viên</h4>
+        @if (viewModel.StaffMajorFacilities.Count == 0)
+        {
+            <p>Chưa có dữ liệu.</p>
+        }
+        else
+        {
+            <table class="table-auto w-full border">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border px-4 py-2">Cơ sở</th>
+                        <th class="border px-4 py-2">Bộ môn</th>
+                        <th class="border px-4 py-2">Chuyên ngành</th>
+                        <th class="border px-4 py-2">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in viewModel.StaffMajorFacilities)
+                    {
+                        <tr>
+                            <td class="border px-4 py-2">@item.FacilityName</td>
+                            <td class="border px-4 py-2">@item.DepartmentName</td>
+                            <td class="border px-4 py-2">@item.MajorName</td>
+                            <td class="border px-4 py-2">
+                                <button class="text-red-500 hover:underline" @onclick="() => DeleteStaffMajorFacility(item.Id)">Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+}
+
+@code {
+    private StaffMajorFacilityViewModel viewModel = new();
+    private List<Staff> staffs = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        staffs = await StaffService.GetAllAsync();
+        viewModel.Facilities = (await FacilityService.GetAllAsync())
+            .Select(f => new FacilityDto { Id = f.Id, Name = f.Name }).ToList();
+    }
+
+    private async Task OnStaffChanged(ChangeEventArgs e)
+    {
+        viewModel.StaffMajorFacilities = await StaffMajorFacilityService.GetByStaffIdAsync(viewModel.StaffId);
+    }
+
+    private async Task OnFacilityChanged(ChangeEventArgs e)
+    {
+        viewModel.SelectedFacilityId = e.Value?.ToString() ?? string.Empty;
+        viewModel.SelectedDepartmentFacilityId = string.Empty;
+        viewModel.SelectedMajorFacilityId = string.Empty;
+
+        viewModel.DepartmentFacilities = await DepartmentService.GetDepartmentsByFacilityAsync(viewModel.SelectedFacilityId);
+        viewModel.MajorFacilities = new(); // reset majors
+    }
+
+    private async Task OnDepartmentChanged(ChangeEventArgs e)
+    {
+        viewModel.SelectedDepartmentFacilityId = e.Value?.ToString() ?? string.Empty;
+        viewModel.SelectedMajorFacilityId = string.Empty;
+
+        viewModel.MajorFacilities = await MajorService.GetMajorsByDepartmentFacilityAsync(viewModel.SelectedDepartmentFacilityId);
+    }
+
+    private async Task AddStaffMajorFacility()
+    {
+        if (await StaffMajorFacilityService.CheckDuplicateAsync(viewModel.StaffId, viewModel.SelectedFacilityId))
+        {
+            // Thông báo lỗi
+            return;
+        }
+
+        await StaffMajorFacilityService.AddAsync(viewModel.StaffId, viewModel.SelectedMajorFacilityId);
+        viewModel.StaffMajorFacilities = await StaffMajorFacilityService.GetByStaffIdAsync(viewModel.StaffId);
+    }
+
+    private async Task DeleteStaffMajorFacility(string id)
+    {
+        await StaffMajorFacilityService.DeleteAsync(id);
+        viewModel.StaffMajorFacilities = await StaffMajorFacilityService.GetByStaffIdAsync(viewModel.StaffId);
+    }
+}
