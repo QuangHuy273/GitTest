@@ -48,50 +48,50 @@
     private Staff staff { get; set; } = new();
     private string errorMessage;
 
-    // private async Task HandleValidSubmit()
-    // {
-    //     errorMessage = "";
+    private async Task HandleValidSubmit()
+    {
+        errorMessage = "";
 
-    //     var asciiOnly = new System.Text.RegularExpressions.Regex("^[\\x00-\\x7F]+$");
+        var asciiOnly = new System.Text.RegularExpressions.Regex("^[\\x00-\\x7F]+$");
 
-    //     if (!staff.AccountFe.EndsWith("@fe.edu.vn") || !staff.AccountFpt.EndsWith("@fpt.edu.vn"))
-    //     {
-    //         errorMessage = "Email phải kết thúc đúng đuôi @fe.edu.vn và @fpt.edu.vn.";
-    //         return;
-    //     }
+        if (!staff.AccountFe.EndsWith("@fe.edu.vn") || !staff.AccountFpt.EndsWith("@fpt.edu.vn"))
+        {
+            errorMessage = "Email phải kết thúc đúng đuôi @fe.edu.vn và @fpt.edu.vn.";
+            return;
+        }
 
-    //     if (staff.AccountFe.Contains(" ") || staff.AccountFpt.Contains(" "))
-    //     {
-    //         errorMessage = "Email không được chứa khoảng trắng.";
-    //         return;
-    //     }
+        if (staff.AccountFe.Contains(" ") || staff.AccountFpt.Contains(" "))
+        {
+            errorMessage = "Email không được chứa khoảng trắng.";
+            return;
+        }
 
-    //     if (!asciiOnly.IsMatch(staff.AccountFe) || !asciiOnly.IsMatch(staff.AccountFpt))
-    //     {
-    //         errorMessage = "Email không được chứa ký tự tiếng Việt.";
-    //         return;
-    //     }
+        if (!asciiOnly.IsMatch(staff.AccountFe) || !asciiOnly.IsMatch(staff.AccountFpt))
+        {
+            errorMessage = "Email không được chứa ký tự tiếng Việt.";
+            return;
+        }
 
-    //     var isDuplicate = await Db.Staffs.AnyAsync(s =>
-    //         s.StaffCode == staff.StaffCode ||
-    //         s.AccountFe == staff.AccountFe ||
-    //         s.AccountFpt == staff.AccountFpt
-    //     );
+        var isDuplicate = await Db.Staffs.AnyAsync(s =>
+            s.StaffCode == staff.StaffCode ||
+            s.AccountFe == staff.AccountFe ||
+            s.AccountFpt == staff.AccountFpt
+        );
 
-    //     if (isDuplicate)
-    //     {
-    //         errorMessage = "Mã hoặc email đã tồn tại.";
-    //         return;
-    //     }
+        if (isDuplicate)
+        {
+            errorMessage = "Mã hoặc email đã tồn tại.";
+            return;
+        }
 
-    //     staff.Id = Guid.NewGuid().ToString();
-    //     staff.Status = 1;
-    //     staff.CreatedDate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-    //     staff.LastModifiedDate = staff.CreatedDate;
+        staff.Id = Guid.NewGuid().ToString();
+        staff.Status = 1;
+        staff.CreatedDate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        staff.LastModifiedDate = staff.CreatedDate;
 
-    //     Db.Staffs.Add(staff);
-    //     await Db.SaveChangesAsync();
+        Db.Staffs.Add(staff);
+        await Db.SaveChangesAsync();
 
-    //     Navigation.NavigateTo("/");
-    // }
+        Navigation.NavigateTo("/");
+    }
 }
