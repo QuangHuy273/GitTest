@@ -7,32 +7,44 @@
       "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\components\\pages\\addstaff.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\models\\departmentfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\models\\departmentfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\pages\\staffmajorfacility.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\components\\pages\\staffmajorfacility.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\interfaces\\istaffmajorfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\interfaces\\istaffmajorfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\models\\departmentfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\models\\departmentfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\pages\\staffmajorfacility.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\components\\pages\\staffmajorfacility.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\viewmodels\\staffmajorfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\interfaces\\istaffmajorfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\interfaces\\istaffmajorfacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -65,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\interfaces\\imajorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\interfaces\\imajorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|solutionrelative:examdistribution\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F2CD1B2-F3CF-4157-ACF6-137664CB192B}|ExamDistribution\\ExamDistribution.csproj|c:\\users\\katar\\source\\repos\\examdistribution\\examdistribution\\components\\pages\\stafflist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -114,23 +118,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StaffService.cs",
-              "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\StaffService.cs",
-              "RelativeDocumentMoniker": "ExamDistribution\\Services\\StaffService.cs",
-              "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\StaffService.cs",
-              "RelativeToolTip": "ExamDistribution\\Services\\StaffService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:48:22.673Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
+              "Title": "Facility.cs",
+              "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\Facility.cs",
+              "RelativeDocumentMoniker": "ExamDistribution\\Models\\Facility.cs",
+              "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\Facility.cs",
+              "RelativeToolTip": "ExamDistribution\\Models\\Facility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:14:56.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Interfaces\\IDepartmentService.cs",
@@ -138,11 +147,12 @@
               "RelativeToolTip": "ExamDistribution\\Interfaces\\IDepartmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:39:14.515Z"
+              "WhenOpened": "2025-04-23T13:39:14.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "StaffMajorFacility.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\StaffMajorFacility.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\StaffMajorFacility.razor",
@@ -150,19 +160,21 @@
               "RelativeToolTip": "ExamDistribution\\Components\\Pages\\StaffMajorFacility.razor",
               "ViewState": "AgIAAHgAAAAAAAAAAAAAAIAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T14:07:10.954Z"
+              "WhenOpened": "2025-04-23T14:07:10.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "ExamDistribution\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T13:30:53.801Z"
+              "WhenOpened": "2025-04-23T13:30:53.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,14 +184,14 @@
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\AddStaff.razor",
               "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\AddStaff.razor",
               "RelativeToolTip": "ExamDistribution\\Components\\Pages\\AddStaff.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-23T13:31:02.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\DaTa\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\DaTa\\AppDbContext.cs",
@@ -191,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\DepartmentService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Services\\DepartmentService.cs",
@@ -203,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "FacilityService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\FacilityService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Services\\FacilityService.cs",
@@ -215,7 +227,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "IStaffMajorFacilityService.cs",
+              "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
+              "RelativeDocumentMoniker": "ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
+              "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
+              "RelativeToolTip": "ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:00:12.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "ExamDistribution\\Services\\StaffService.cs",
+              "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\StaffService.cs",
+              "RelativeToolTip": "ExamDistribution\\Services\\StaffService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:48:22.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DepartmentFacility.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\DepartmentFacility.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Models\\DepartmentFacility.cs",
@@ -223,12 +259,11 @@
               "RelativeToolTip": "ExamDistribution\\Models\\DepartmentFacility.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:33:56.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T11:33:56.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "StaffMajorFacilityViewModel.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\ViewModels\\StaffMajorFacilityViewModel.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\ViewModels\\StaffMajorFacilityViewModel.cs",
@@ -240,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Program.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Program.cs",
@@ -252,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Layout\\NavMenu.razor",
@@ -264,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "DepartmentFacilityViewModel.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\ViewModels\\DepartmentFacilityViewModel.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\ViewModels\\DepartmentFacilityViewModel.cs",
@@ -276,19 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IStaffMajorFacilityService.cs",
-              "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
-              "RelativeDocumentMoniker": "ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
-              "ToolTip": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
-              "RelativeToolTip": "ExamDistribution\\Interfaces\\IStaffMajorFacilityService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T07:00:12.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Layout\\MainLayout.razor",
@@ -300,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\Counter.razor",
@@ -312,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "IMajorService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Interfaces\\IMajorService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Interfaces\\IMajorService.cs",
@@ -324,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "StaffList.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\StaffList.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\StaffList.razor",
@@ -336,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "StaffMajorFacilityService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\StaffMajorFacilityService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Services\\StaffMajorFacilityService.cs",
@@ -348,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\Department.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Models\\Department.cs",
@@ -360,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MajorFacility.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\MajorFacility.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Models\\MajorFacility.cs",
@@ -372,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "MajorService.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Services\\MajorService.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Services\\MajorService.cs",
@@ -384,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\Error.razor",
@@ -396,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Staff.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Models\\Staff.cs",
@@ -408,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "StaffMajorFacility.cs",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Models\\StaffMajorFacility.cs",
               "RelativeDocumentMoniker": "ExamDistribution\\Models\\StaffMajorFacility.cs",
@@ -420,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "EditStaff.razor",
               "DocumentMoniker": "C:\\Users\\katar\\source\\repos\\ExamDistribution\\ExamDistribution\\Components\\Pages\\EditStaff.razor",
               "RelativeDocumentMoniker": "ExamDistribution\\Components\\Pages\\EditStaff.razor",
